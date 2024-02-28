@@ -1,0 +1,8 @@
+/.vscode/
+/.idea/
+/temp/*.txt
+.DS_Store
+Thumbs.db
+/build/
+/dist/
+/node_modules/
