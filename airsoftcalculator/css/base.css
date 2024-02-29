@@ -1,0 +1,61 @@
+/* Light mode styles */
+body {
+  font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
+  background-color: #fff;
+  color: #333; /* Changed for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #222; /* Dark grey color for text */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth transition for theme change */
+}
+
+body, html {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.container {
+  flex-grow: 1; /* Grow to absorb space */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+nav.navbar, footer.page-footer {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+  nav.navbar, footer.page-footer {
+    background-color: #1e1e1e; /* Slightly lighter shade for contrast */
+    color: #000;
+  }
+
+  .navbar-brand {
+    color: #000;
+  }
+}
+
